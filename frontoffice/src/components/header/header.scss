@@ -1,0 +1,77 @@
+@import "./../../css/variables.scss";
+
+.header{
+    max-width: var(--max-width-layout);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 var(--space-base);
+    height: var(--header-size);
+
+    &__logo{
+        display: flex;
+        align-items: center;
+    }
+    
+    &__logo-image{
+        transition: all 300ms ease-in-out;
+        border-radius: 100%;
+        width: 42px;
+        height: 42px;
+        margin-right: var(--space-s);
+        background-color: var(--color-primary);
+
+        &:hover{
+            opacity: 0.4;
+        }
+    }
+    
+    &__logo-name{
+        font-size: var(--font-size-m);
+        font-weight: var(--font-weight-bold);
+        line-height: 1;
+        span{
+            font-size: var(--font-size-base);
+            font-weight: 300;
+            line-height: 1;
+        }
+    }
+
+    &__menu{
+        display: flex;
+        align-items: center;
+        > a{
+            margin-right: var(--space-base);
+            color: var(--base-text-color);
+            font-size: var(--font-size-m);
+
+            &:hover{
+                transition: all 300ms ease-in-out;
+                color: var(--color-primary);
+            }
+
+            &:active{
+                opacity: 0.4;
+            }
+        }
+        &-social-networks{
+            a{
+                transition: all 300ms ease-in-out;
+                margin-left: var(--space-s);
+                line-height: 1;
+                vertical-align: middle;
+
+                img{
+                    width: 24px;
+                    height: 24px;
+                }
+
+                &:hover{
+                    opacity: 0.4;
+                }
+            }
+        }
+    }
+}
+

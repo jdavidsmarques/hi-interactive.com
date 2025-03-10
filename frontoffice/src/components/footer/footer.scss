@@ -1,0 +1,30 @@
+@import "./../../css/variables.scss";
+
+.footer{
+    max-width: var(--max-width-layout);
+    height: var(--footer-size);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: var(--space-base) auto auto auto;
+    padding: 0 var(--space-base);
+
+
+    &__social-networks{
+        a{
+            transition: all 300ms ease-in-out;
+            margin-left: var(--space-s);
+            line-height: 1;
+            vertical-align: middle;
+
+            img{
+                width: 24px;
+                height: 24px;
+            }
+
+            &:hover{
+                opacity: 0.4;
+            }
+        }
+    }
+}

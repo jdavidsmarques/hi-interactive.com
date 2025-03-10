@@ -1,0 +1,50 @@
+@import "../../css/variables.scss";
+.post-detail{
+    padding-top: var(--space-l);
+    &__title{
+        margin-bottom: var(--space-base);
+    }
+    &__time{
+        display: flex;
+        align-items: center;
+        svg{
+            margin-left: var(--space-s);
+            margin-right: var(--space-xs);
+        }
+    }
+
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        padding-top: var(--space-l);
+
+        &-left{
+            max-width: calc(100% - 336px);
+            flex: 1;
+            font-size: 18px;
+            line-height: 30px;
+
+            ::selection {
+                color: #FFF;
+                background: var(--base-text-color);
+            }
+
+            p{
+                margin-bottom: var(--space-base);
+            }
+            
+            img{
+                max-width: 100%;
+            }
+        }
+
+        &-right{
+            width: 296px;
+            &-posts{
+                .post-card{
+                    margin-bottom: var(--space-base);
+                }
+            }
+        }
+    }
+}

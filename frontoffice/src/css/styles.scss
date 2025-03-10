@@ -1,0 +1,62 @@
+@import "./variables.scss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  background-color: var(--bg-color);
+  max-width: 100vw;
+  overflow-x: hidden;
+  color: var(--base-text-color);
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+// theme dark
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+h1{
+  font-size: var(--font-size-xl);
+  color: #2d3748;
+}
+
+.main-content{
+  max-width: var(--max-width-layout);
+  padding-left: var(--space-base);
+  padding-right: var(--space-base);
+  margin: auto;
+  min-height: calc(100vh - var(--header-size)); // set footer on bottom when content less than 100vh
+}
+
+.posts-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  margin-top: 40px;
+}
