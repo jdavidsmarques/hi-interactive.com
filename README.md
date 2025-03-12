@@ -1,2 +1,5 @@
 # hi-interactive.com
-Website Hi Interactive
+Website Hi Interactive company
+
+Nexjs
+Strapi for backoffice and api

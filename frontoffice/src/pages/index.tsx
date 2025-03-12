@@ -1,8 +1,6 @@
-import { useState } from "react";
-
 // Page component
 export default function Page() {
-  const [posts, setPosts] = useState<any>([]);
+  //const [posts, setPosts] = useState<any>([]);
 
   // Get rencent posts
   /*
